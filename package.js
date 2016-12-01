@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-specimen',
-  version: '1.1.3',
+  version: '1.1.4',
   summary: 'HL7 FHIR Resource - Specimen',
   git: 'https://github.com/clinical-meteor/hl7-resource-specimen',
   documentation: 'README.md'
@@ -21,8 +21,8 @@ Package.onUse(function(api) {
   api.use('clinical:hl7-resource-datatypes@0.6.0');
 
   api.addFiles('lib/hl7-resource-specimen.js');
-  api.addFiles('server/rest.js', 'server');
-  api.addFiles('server/initialize.js', 'server');
+  // api.addFiles('server/rest.js', 'server');
+  // api.addFiles('server/initialize.js', 'server');
 
   api.export('Specimen');
   api.export('Specimens');
